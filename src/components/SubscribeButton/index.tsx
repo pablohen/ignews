@@ -1,9 +1,11 @@
 import React from 'react';
 import styles from './style.module.scss';
 
-interface Props {}
+interface Props {
+  priceId: string;
+}
 
-const SubscribeButton = (props: Props) => {
+const SubscribeButton = ({ priceId }: Props) => {
   return (
     <button type="button" className={styles.subscribeButton}>
       Subscribe now
